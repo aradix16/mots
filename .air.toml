@@ -1,0 +1,26 @@
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  args_bin = []
+  bin = "./tmp/app"
+  cmd = "go build -o ./tmp/app"
+  delay = 1000
+  exclude_dir = ["node_modules", "tmp"]
+  include_ext = ["go", "tmpl", "css", "js"]
+
+[log]
+  main_only = false
+  time = false
+
+[misc]
+  clean_on_exit = true
+
+[proxy]
+  app_port = 0
+  enabled = false
+  proxy_port = 0
+
+[screen]
+  clear_on_rebuild = false
+  keep_scroll = false
